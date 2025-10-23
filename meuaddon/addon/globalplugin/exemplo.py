@@ -12,4 +12,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             focusObject = ui.getFocusObject()
             if focusObject:
                 ui.message(f"Elemento focado é: {focusObject.name}")
-            self.scrpit_digaOElemento = script_digaOElemento
+            else:
+                ui.message("Nenhum elemento focado.")
