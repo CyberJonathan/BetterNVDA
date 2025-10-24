@@ -1,6 +1,6 @@
-import globalPluginHandler 
-import ui
-import keyboardHandler
+import globalPluginHandler #type ignore
+import ui #type ignore
+import keyboardHandler #type ignore
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     def __init__(self):
@@ -12,5 +12,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             focusObject = ui.getFocusObject()
             if focusObject:
                 ui.message(f"Elemento focado é: {focusObject.name}")
-            else:
-                ui.message("Nenhum elemento focado.")
+
+        def script_LerLinhaAtual(self,gesture):
+            
+           
+            
+
+
+        
